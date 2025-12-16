@@ -11,8 +11,28 @@
     </header>
     <section>
         <form action="" method="get">
+
+        <!-- DADOS PESSOAIS: -->
+
             <label for="userName">Nome:</label>
-            <input type="text" name="userName">
+            <input type="text" name="userName" required>
+
+            <label for="userAge">Idade:</label>
+            <input type="number" name="userAge" min="12" max="100" required>
+
+            <label for="birthDate">Data de nascimento:</label>
+            <input type="date" name="birthDate">
+
+            <label for="userEmail">Email:</label>
+            <input type="email" name= "userEmail" required>
+
+            <label for="userPhoneNumer">Telefone:</label>
+            <input type="tel" name= "userPhoneNumer" pattern="[0-9]{11}" placeholder="(12) 111111111">
+
+            <label for="userImage">Upload de fotos:</label>
+            <input type="file" accept="img/#" name="userImage">
+
+
             <button type="submit">Enviar</button>
         </form>
     </section>
