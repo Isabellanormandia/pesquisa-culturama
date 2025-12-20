@@ -11,28 +11,28 @@
     </header>
     <section>
         <form action="" method="get">
-             <!-- <fieldset>  
-                DADOS PESSOAIS:  
+            <fieldset>  
+                <!-- DADOS PESSOAIS:   -->
                 <legend>Dados Pessoais:</legend>
-                <label for="userName">Nome:</label>
-                <input type="text" name="userName" required>
+                <label for="name">Nome:</label>
+                <input id="name" type="text" name="userName" required>
                 <br>
-                <label for="userAge">Idade:</label>
-                <input type="number" name="userAge" min="12" max="100" required>
+                <label for="age">Idade:</label>
+                <input id="age" type="number" name="userAge" min="12" max="100" required>
                 <br>
-                <label for="birthDate">Data de nascimento:</label>
-                <input type="date" name="birthDate">
+                <label for="birth">Data de nascimento:</label>
+                <input id="birth" type="date" name="birthDate">
                 <br>
-                <label for="userEmail">Email:</label>
-                <input type="email" name= "userEmail" required>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name= "userEmail" required>
                 <br>
-                <label for="userPhoneNumer">Telefone:</label>
-                <input type="tel" name= "userPhoneNumer" pattern="[0-9]{11}" placeholder="(12) 111111111">
+                <label for="phonenumber">Telefone:</label>
+                <input id="phonenumber" type="tel" name= "userPhoneNumer" pattern="[0-9]{11}" placeholder="(12) 111111111">
                 <br>
-                <label for="userImage">Upload de fotos:</label>
-                <input type="file" accept="img/#" name="userImage">
+                <label for="image">Upload de fotos:</label>
+                <input id="image" type="file" accept="img/#" name="userImage">
              </fieldset>
-             <br>
+
              <fieldset>
                 <legend>Perfil</legend>
                     <p>Gênero:</p>
@@ -87,8 +87,7 @@
                         <br>
                     <label for="userCity">Cidade:</label>
                     <input type="text" name="userCity">    
-             </fieldset>-->
-
+             </fieldset>
 
              <fieldset>
                 <legend>Hábitos:</legend>
@@ -104,9 +103,6 @@
                 <br>
                 <input type="checkbox" name="social" value="discord">
                 <label for="social">Discord</label>
-
-
-
 
              </fieldset>
              <button type="submit">Enviar</button>
