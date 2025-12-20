@@ -14,48 +14,62 @@
             <fieldset>  
                 <!-- DADOS PESSOAIS:   -->
                 <legend>Dados Pessoais:</legend>
+
                 <label for="name">Nome:</label>
                 <input id="name" type="text" name="userName" required>
                 <br>
+
                 <label for="age">Idade:</label>
                 <input id="age" type="number" name="userAge" min="12" max="100" required>
+
                 <br>
                 <label for="birth">Data de nascimento:</label>
                 <input id="birth" type="date" name="birthDate">
+
                 <br>
                 <label for="email">Email:</label>
                 <input id="email" type="email" name= "userEmail" required>
+
                 <br>
                 <label for="phonenumber">Telefone:</label>
                 <input id="phonenumber" type="tel" name= "userPhoneNumer" pattern="[0-9]{11}" placeholder="(12) 111111111">
+
                 <br>
                 <label for="image">Upload de fotos:</label>
                 <input id="image" type="file" accept="img/#" name="userImage">
+
              </fieldset>
 
              <fieldset>
                 <legend>Perfil</legend>
+
                     <p>Gênero:</p>
-                    <input type="radio" name="userGender" value="Feminino">
-                    <label for="userGender">Feminino</label>
+                    <input id="fem" type="radio" name="userGender" value="Feminino">
+                    <label for="fem">Feminino</label>
+
                     <br>
-                    <input type="radio" name="userGender" value="Masculino">
-                    <label for="userGender">Masculino</label>
+                    <input id="masc" type="radio" name="userGender" value="Masculino">
+                    <label for="masc">Masculino</label>
+
                     <br>
-                    <input type="radio" name="userGender" value="Prefiro não informar">
-                    <label for="userGender">Prefiro não informar</label>
+                    <input id="notinf" type="radio" name="userGender" value="Prefiro não informar">
+                    <label for="notinf">Prefiro não informar</label>
                     <br>
+
                     <label for="maritalStatus">Estado civil:</label>
-                    <select name="maritalStatus">
+                    <select id="maritalStatus" name="maritalStatus">
+
                         <option value="notInformed">Selecione...</option>
                         <option value="casado">Casado</option>
                         <option value="Solteiro">Solteiro</option>
                         <option value="Viúvo">Viúvo</option>
                         <option value="Divorciado">Divorciado</option>
                     </select>
+
                     <br>
                     <label for="userState">Estado:</label>
-                    <select name="userState" required>
+                    <select id="userState" name="userState" required>
+
                         <option value="acre"> Acre </option> 
                         <option value="alagoas"> Alagoas </option> 
                         <option value="amapá"> Amapá </option> 
@@ -84,25 +98,31 @@
                         <option value="sergipe">  Sergipe </option> 
                         <option value="tocantins"> Tocantins </option> 
                         </select>
+
                         <br>
                     <label for="userCity">Cidade:</label>
-                    <input type="text" name="userCity">    
+                    <input id="userCity" type="text" name="userCity">  
+
              </fieldset>
 
              <fieldset>
                 <legend>Hábitos:</legend>
+
                 <p>Redes Sociais:</p>
-                <input type="checkbox" name="social" value="instagram">
-                <label for="social">Instagram</label>
+                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <label for="instagram">Instagram</label>
                 <br>
-                <input type="checkbox" name="social" value="facebook">
-                <label for="social">Facebook</label>
+
+                <input id="facebook" type="checkbox" name="social" value="facebook">
+                <label for="facebook">Facebook</label>
                 <br>
-                <input type="checkbox" name="social" value="whatsapp"
-                <label for="social">Whats App</label>
+
+                <input id="whatsapp" type="checkbox" name="social" value="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+
                 <br>
-                <input type="checkbox" name="social" value="discord">
-                <label for="social">Discord</label>
+                <input id="discord" type="checkbox" name="social" value="discord">
+                <label for="discord">Discord</label>
 
              </fieldset>
              <button type="submit">Enviar</button>
