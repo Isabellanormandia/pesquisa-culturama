@@ -33,6 +33,9 @@ form{
     padding: 15px;
     border-radius: 15px;
     align-items: flex-start;
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 fieldset{
